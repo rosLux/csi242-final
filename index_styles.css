@@ -1,0 +1,79 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Russo One';
+    src: url(https://fonts.googleapis.com/css?family=Russo+One&display=swap);
+}
+/* Roslyn Alonzo
+    CSI140 Final project */
+    /*
+        9. index_styles has at least 5 selectors
+        10.4. at least 5 selectors apply one of more of box model aspects
+        10.6. navbar in each page uses float based layout
+        10.8. at least 4 different colors with different color name types (#abcdef, hsl(210,84,88), white, rgb(211,211,211))
+        10?. google fonts embedded
+        11. navbar linking to all pages (except one unique page) with custom style
+        12. min. 3 images on each page (placeholders, but fulfilled)
+        
+    */
+/* overview */
+html {
+    background-image: url(img/bg_blue.png);
+    background-color: #abcdef;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: hsl(210, 84%, 88%);
+    width: 66%;
+    margin: auto;
+    color: #d9764c;
+    clear: left;
+    text-align: center;
+}
+body p {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+}
+body h2 {
+    color: white;
+    background-color: #abcdef;
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+}
+
+/* header & nav */
+body > header > h1#titleHeader {
+    background-color: #abcdef;
+    color: #d9764c;
+    font-family: 'Russo One';
+    font-size: 40px;
+    padding: 20px 0px;
+    margin: auto;
+    text-align: center; 
+}
+.navbar {
+    background-color: #d9764c;
+    overflow: hidden;
+}
+.navbar li {
+    list-style-type: none;
+}
+.navbar a {
+    color: white;
+    background-color: #d9764c;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 25%;
+}
+
+
+/* footer */
+footer {
+    background-color: #d9764c;
+    color: white;
+    font-size: small;
+    padding: 5px 5px;
+}

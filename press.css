@@ -1,0 +1,56 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Russo One';
+    src: url(https://fonts.googleapis.com/css?family=Russo+One&display=swap);
+}
+/* Roslyn Alonzo
+    CSI140 Final project */
+/* overview */
+html {
+    background-image: url(img/bg_neutral.png);
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: white;
+    width: 66%;
+    margin: auto;
+    color: black;
+    clear: left;
+    text-align: center;
+}
+body p {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+}
+body h2 {
+    color: black;
+    background-color: rgb(211, 211, 211);
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+}
+a, a:visited, a:hover, a:active {
+    background-color: lightgray;
+    text-decoration: none;
+    color: black;
+}
+
+/* header & nav */
+body > header > h1#pressHeader {
+    background-color: white;
+    color: black;
+    font-family: 'Russo One';
+    font-size: 40px;
+    padding: 20px 0px;
+    margin: auto;
+    text-align: center; 
+}
+
+/* footer */
+footer {
+    background-color: white;
+    color: black;
+    font-size: small;
+    padding: 5px 5px;
+}

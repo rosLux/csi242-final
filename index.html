@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<!--
+    Roslyn Alonzo
+    CSI140/CSI242 Final Project
+    https://roslux.github.io/csi242-final/
+
+    REQUIREMENT 1 - COMPLETE - default script file named script.js and linked to index.html
+    REQUIREMENT 2 - COMPLETE - window load event listener
+    REQUIREMENT 3 - INCOMPLETE (2/3) - use one of each to append or modify DOM elements and HTML
+        a. document.getElementById - COMPLETE
+        b. element.querySelector - COMPLETE
+        c. element.querySelectorAll - INCOMPLETE (do something with cast page images?)
+    REQUIREMENT 4 - INCOMPLETE (1/3) - respond to events using JS
+        a. mouse event - mouseover and drag - COMPLETE
+        b. keyboard event - INCOMPLETE
+        c. timer - COMPLETE
+    REQUIREMENT 5 - COMPLETE - code to add and remove HTML DOM elements in response to an event (button click), using the following:
+        a. document.create - COMPLETE
+        b. element.appendChild - COMPLETE
+        c. element.removeChild - COMPLETE
+    REQUIREMENT 7 - COMPLETE - use Date object to display current date and time in index.html
+    REQUIREMENT 10 - COMPLETE - HTML form elements, including input, text field, text area, and checkbox with validation
+    REQUIREMENT 12 - INCOMPLETE (2/5) - use 5 different types of functions
+        1/5 - named function
+        2/5 - anonymous function
+    
+-->
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index_styles.css">
+    <link rel="stylesheet" href="layout.css">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+    <script src="script.js" async></script>
+    <title>world's end garden</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="titleHeader">world's end garden</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">index</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="cast.html">cast</a></li>
+                <li><a href="presskit.html">press kit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <h2>index</h2>
+        <img class="imgCenter" src="img/index_center.png" onmouseover="changeImg()" onmouseout="revertImg()" id="anim">
+        <p>world's end garden is an upcoming adventure game about perserverance and nurture after the end of the world.
+        </p>
+        <p>coming to pc in 20XX.</p>
+        <h2>screenshots</h2>
+        <div class="indexGallery">
+            <div class="indexRow">
+                <div class="indexColumn">
+                    <img src="img/screenshot_1.png">
+                </div>
+                <div class="indexColumn">
+                    <img src="img/screenshot_2.png">
+                </div>
+            </div>
+            <div class="indexRow">
+                <div class="indexColumn">
+                    <img src="img/screenshot_3.png">
+                </div>
+            </div>
+        </div>
+        
+        <h2>contact</h2>
+  
+        <form id="contactForm" name="contactForm">
+            <table style="margin: auto;">
+                <tr>
+                    <td>Email</td>
+                    <td><input type=text name="contactEmail" id="contactEmail" required pattern="/\S+@\S+\.\S+/"></td>
+                    <td><input type=checkbox>Hide address</td>
+                    <td><button type="button" name="contactButton" id="contactButton" style="margin: 15px;">Submit</button></td>
+                </tr>
+                <tr>
+                    <textarea style="margin: auto;" cols="100" rows="10" id="contactTextArea" required placeholder="questions?"></textarea>
+                </tr>
+            </table>
+        </form>
+
+        <img class="imgCenter" src="img/sprouts.png">
+    </article>
+    <footer>
+        website by roslyn
+        <div id="dateNow"></div>
+    </footer>
+</body>
+
+</html>

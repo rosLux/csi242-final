@@ -1,0 +1,51 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Russo One';
+    src: url(https://fonts.googleapis.com/css?family=Russo+One&display=swap);
+}
+/* Roslyn Alonzo
+    CSI140 Final project */
+
+    /* 
+    10.3. ids or classes in at least 3 selectors across css files
+    10.5. at least one page (cast.html) using grid layout
+    14. layout.css 
+    
+    */
+/* gallery grid */
+.cast {
+    text-align: center;
+}
+.rowCast {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 4px;
+    text-align: center;
+}
+.columnCast {
+    flex: 25%;
+    padding: 0px 4px;
+}
+.columnCast img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+.columnCast p {
+    text-align: center;
+}
+
+/* images */
+.imgCenter {        
+    display: block;
+    margin: 20px auto;
+}
+ul#music {
+    list-style-type: none;
+}
+ul#sproutList > li { /* 13. image as list style for at least one page */
+    width: 75%;
+    list-style-type: none;
+    list-style-image: url(img/sprout_icon.png);
+    list-style-position: inside;
+    text-align: center;
+}
